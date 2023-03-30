@@ -1,0 +1,140 @@
+﻿@charset "utf-8";
+
+/*Global 网站全局CSS*/
+.body{
+	padding-top: 0px !important;
+	background-image: url(/public/assets/img/top/background.jpg);
+	background-color: #F2F2F2;
+}
+.banner{
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+/*ding*/
+.head-a{width:100%; height:107px;background:#FFFFFF;}
+.head .logo img{margin-top:30px;}
+.head .logo2 img{margin-top:30px;}
+.head .shuangyu{position:absolute; bottom:10px; right:160px;}
+
+
+@media (max-width: 768px) {
+  .head-a {
+    display: none;
+  }
+  
+  .navbar{
+	background:none;
+	background-color: white;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-header{
+	display: none;
+  }
+}
+
+/*nav*/
+.nav-a{width:100%; height:56px; background:url(../images/top/navbg1.png) center no-repeat;}
+.nav{height:56px; line-height:56px; margin:0 auto;display:flex; justify-content: space-around;width:100%;}
+.nav a{color:#FFFFFF !important; font-size:14px;}
+.nav a:hover{color:#FFFFFF; text-decoration:none;}
+.navbar{
+	background-image: url(/public/assets/img/top/navbg1.png);
+	margin-bottom: 0px;
+}
+
+.coupon-list{
+	display: flex;
+	padding-left: 0;
+	justify-content: space-around;
+}
+.coupon-list li{
+	display: inline;
+	width: 30%;
+	padding-right: 10px;
+}
+.coupon-list li .pic{
+	width: 100%;
+	padding-bottom: 10px;
+}
+.coupon-list li .pic img{
+	width: 100%;
+	height: 100%;
+}
+.coupon-list li .txt{
+	margin:0 auto; 
+}
+.coupon-list li .txt .txt1{
+	font-size:14px; 
+	color:#666666; 
+	line-height:30px;
+	padding-bottom: 10px;
+}
+.coupon-list li .txt .txt2{
+	text-align: right;
+}
+.coupon-list li .txt .txt2 a{
+	height:30px; 
+	line-height:30px; 
+	text-align:center; 
+	background:#ea1d22; 
+	color:#FFFFFF; 
+	padding-left:15px; 
+	padding-right:15px; 
+	font-size:14px; 
+	font-weight:bold;
+	width: 100px;
+}
+.coupon-list li .txt .txt3{font-size:14px; color:#666666; text-align:right; height:30px; line-height:30px;}
+.coupon-list li .txt .txt4{font-size:14px; color:#666666; text-align:right; height:30px; line-height:30px;}
+
+.imgfullsize img{
+	width: 100%;
+}
+
+
+.footer-links-title{
+	font-weight: bold;
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+
+footer .hang1{
+	margin-bottom: 15px;
+}
+
+footer .hang2{	
+	font-weight: bold;
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+
+footer .hang3{
+	margin-bottom: 15px;
+}
+
+footer .hang4{
+	margin-bottom: 15px;
+	 background:url(/assets/img/xinlang.png) 0px 8px no-repeat; 
+	 height:40px; 
+	 line-height:40px;
+}
+
+footer .hang4 a{
+	padding-left:35px;
+	font-size:14px;
+	font-family:"微软雅黑";
+}
+
+.article-list .article-item {
+  padding: 10px 0;
+}
+
+
+
+
+
+
+

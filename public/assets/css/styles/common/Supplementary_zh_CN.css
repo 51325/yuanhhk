@@ -1,0 +1,442 @@
+/*
+   Error message style for validation
+*/
+.validation-advice {
+	background-color: #ff5b5b;
+	border-color: #808080;
+	border-style: solid;
+	border-width: 1px;
+	color: #FFF;
+	font-weight: bold;
+	margin-bottom: 2px;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 1px;
+	vertical-align:middle;
+}
+
+
+#RecipientAddressNotice{
+	margin-left:5px;
+	color:#000000;
+	display: inline;
+
+}
+.note{
+	border-width:2px;
+	font-family: simsun, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	border-color:#DDDDDD;
+	border-style: dashed;
+	width: 725px;
+	line-height: 20px;
+	margin-left:26px;
+	margin-top:5px;
+	margin-buttom:2px;
+	text-align:left;
+	padding:1px;
+}
+.note1{
+	border-width:2px;
+	width: 700px;
+	font-family: simsun, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	border-color:#DDDDDD;
+	border-style: dashed;
+	height: 42px;
+	line-height: 20px;
+	margin-left:36px;
+	margin-top:15px;
+	margin-buttom:2px;
+	text-align:left;
+	padding:1px;
+}
+
+.tel {color: #FF0000}
+
+
+body {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-size:12px;
+	background-color: #f5f5f5;
+	padding-left:0px;
+	font-family: simsun, Arial, Helvetica, sans-serif;
+	SCROLLBAR-FACE-COLOR: white; 
+	SCROLLBAR-HIGHLIGHT-COLOR: white; 
+	SCROLLBAR-SHADOW-COLOR: #add0eb; 
+	SCROLLBAR-3DLIGHT-COLOR: #add0eb; 
+	SCROLLBAR-ARROW-COLOR: #5e9cc7; 
+	SCROLLBAR-TRACK-COLOR: white; 
+	SCROLLBAR-DARKSHADOW-COLOR: white;	
+}
+
+
+
+/*设置大标题*/
+.lheadline,.lheadline1{
+	color:#df1f36;
+	font-family: 黑体;
+	font-size: 26px;
+	font-weight: bold;
+	text-align:left;
+	margin-left:25px;
+	margin-top:5px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+
+/*设置大标题*/
+.lheadlinefor{
+	color:#df1f36;
+	font-family: 黑体;
+	font-size: 26px;
+	font-weight: bold;
+	text-align:left;
+	margin-left:25px;
+	margin-top:5px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+
+.lheadline1{
+	margin-left:20px;
+	margin-top:20px;
+	position:relative;
+	margin-buttom:50px;
+	font-size: 30px;
+}
+
+
+.colheadline{
+	background:#ca000a;
+}
+
+/*设置小标题*/
+.sheadline ,.sheadline1 {
+	color:white;
+	font-size:14px;
+	font-weight:bolder;
+	text-align:left;
+	margin-left:5px;
+}
+
+
+.colheadline1{
+	background:white;
+}
+
+.sheadline1 {
+	font-weight: bold;
+	color:black;
+}
+
+.tail{
+	background:#ca000a;
+	color:white;
+}
+
+.trColor1{
+	background:#e2e2e2;
+}
+
+.trColor2{
+	background:#d4d4d4;
+}
+
+
+.clew{
+	color : red;
+	FONT-SIZE: 12px;
+}
+
+.clew p {
+	font-weight: bold;
+}
+
+
+.tdtext-right{
+	width: 14% ;
+	height: 35px;
+	align: right;
+}
+
+.divtext-center{
+	width                : 80px;
+	text-align           : center;
+	text-justify         : distribute-all-lines;
+	text-align-last      : justify;
+	margin-left          :5px;
+}
+
+.subscribe{
+	text-align           : center;
+	padding-buttom :5px;
+	width:35px;
+	background:red;
+	display: inline;
+	margin-right:10px;
+	margin-left:0px;
+	margin-top:0px;
+}
+
+.tdtext-left{
+	text-align:left;
+}
+
+.tableColor1{
+	background:#e2e2e2;
+	height: 30;
+	text-align: center;
+}
+
+.tableColor2,.tableColor21{
+	background:#d4d4d4;
+	font-weight: bold;
+	height: 30;
+	text-align: center;
+}
+
+.tableColor21{
+	background:#ca000a;
+}
+.tdtext-color{
+	color:white;
+
+}
+
+.tr-center-color-bold{
+	height: 35px;
+	background:#d4d4d4;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+.tr-center-color{
+	height: 35px;
+	background:#e2e2e2;
+	text-align: center;
+}
+
+.tr-left-color-bold{
+	height: 35px;
+	background:#d4d4d4;
+	text-align: left;
+	font-weight: bold;
+	padding-left:10px;
+}
+
+.td-left-color{
+	height: 35px;
+	background:#e2e2e2;
+	text-align: left;
+}
+
+.tdtext-right-color , .tdtext-right-color1{
+	width: 11% ;
+	height: 35px;
+	align: right;
+	background:#d4d4d4;
+}
+.tdtext-right-color1{
+	background:#e2e2e2;
+}
+
+.tdtext-left-color{
+	text-align: left;
+	background:#e2e2e2;
+	height: 35px;
+	padding-left:5px;
+}
+
+.query-bgcolor2{
+	background:#d4d4d4;
+}
+
+.query-bgcolor1{
+	background:#e2e2e2;
+}
+
+.tdtext-center-color-bold{
+	width: 25% ;
+	height: 20;
+	font-weight: bold;
+	text-align: center;
+	background:#d4d4d4;
+}
+
+.tdtext-center-color{
+	width: 25% ;
+	height: 35px;
+	text-align: center;
+	background:#e2e2e2;
+}
+
+.tdtext-isMust-color-bold{
+		width:120px;
+		height:50px;
+		background:			 #d4d4d4;
+		text-align           : center;
+		font-weight			 : bold;	
+}
+		
+.tdtext-isCustSelect-color-bold{
+	width:120px;
+	height:50px;
+	background:			 #d4d4d4;
+	text-align           : left;
+	font-weight			 : bold;
+	vertical-align		 : middle ; 
+}
+
+.custSelectCols{
+	text-align:right;
+	vertical-align: middle ; 
+	
+}
+
+
+.lh30{
+	line-height: 20px;
+	height: 15px;
+	cursor:pointer;
+}
+
+
+.btn1 {
+	width:100%;
+	display: block;
+	line-height: 20px;
+	font-size: 12px;
+	height:25px;
+	text-align: center;
+	margin-top: 0px;
+	cursor:pointer;
+}
+
+.btn1 a {
+	color: #ca000a;
+	margin-top: 2px;
+	display: block;
+	padding: 0 0 0 0px;
+	cursor:pointer;
+	
+}
+
+.btn1 a span {
+	background: url(../../images/order/Lbtn_r_r.gif) no-repeat right top;
+	display: block;
+	padding: 0px 2px 0px 1px;
+	padding-top: 0.5px\9;
+	padding-top: 0px;
+	color:white;
+	cursor:pointer;
+}
+
+.btnSubmit {
+	width:100%;
+	display: block;
+	line-height: 30px;
+	font-size: 22px;
+	height:20px;
+	text-align: center;
+	margin-top: 10px;
+	cursor:pointer;
+    
+}
+
+.btnSubmit a {
+	color: #ca000a;
+	margin-top: 2px;
+	display: block;
+	padding: 0 0 0 2px;
+	cursor:pointer;
+    
+}
+
+.btnSubmit a span {
+	background: url(../../images/order/Lbtn_r_r_Submit.gif) no-repeat right top;
+	display: block;
+	padding: 0px 2px 0px 1px;
+	padding-top: 0.5px\9;
+	padding-top: 0px;
+	color:white;
+	
+}
+
+.topPicture{
+	display: block;
+	width:100%;
+	height:65px;
+	align:right;
+	padding:0px;
+	background: url(../../images/loginmgmt/frame/os_bg.jpg) repeat-x ;
+}
+
+.topPictureLeft{
+	width:200px;
+	height:65px;
+	background: url(../../images/loginmgmt/frame/images_zh_CN/os.jpg)  ;
+	float:left;
+}
+
+.please{
+	color : red;
+	margin-left :5px;
+	
+}
+
+.please p {
+	font-weight: bold;
+	display: inline;
+}
+
+.manyOrder{
+	color : red;
+	text-align           : left;
+}
+
+.smsScription{
+	height: 35px;
+	text-align: left;
+}
+
+.applyPrize{
+	background: #d4d4d4;
+	height: 75px;
+	padding-left :15px;
+}
+
+.special-center-color{
+	width:13%;
+	background: #d4d4d4;
+	text-align: center;
+}
+
+.errorMessage {
+	color:#FF0000;	
+	font-weight: bold;
+	margin-bottom: 2px;
+	margin-left: 2px;
+}
+
+#batchDelete{
+	color:#df1f36;
+	text-align:left;
+}
+
+
+fieldset{
+	width:705px;
+	margin:5px;
+	padding-left:5px;
+	border:0px solid #ccc;
+
+}
+
+fieldset p{
+	text-align: left;
+}

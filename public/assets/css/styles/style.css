@@ -1,0 +1,162 @@
+.link1 {
+	COLOR: #000000; FONT-SIZE: 9pt; TEXT-DECORATION: none
+}
+.a2 {
+    FONT-SIZE: 9pt; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 9pt; TEXT-DECORATION: underline
+}
+A:link {
+	FONT-SIZE: 9pt; TEXT-DECORATION: none
+}
+A:active {
+	FONT-SIZE: 9pt; TEXT-DECORATION: underline
+}
+A:visited {
+	FONT-SIZE: 9pt
+}
+.a3 {
+	COLOR: #ffffff; FONT-SIZE: 9px; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.a4 {
+	COLOR: #bceafc; FONT-SIZE: 9pt; TEXT-DECORATION: none
+}
+.bg {
+	BACKGROUND-COLOR: #0f6dba; COLOR: #bceafc; FONT-SIZE: 9pt
+}
+.a5 {
+	COLOR: #1765a4; FONT-SIZE: 9pt; TEXT-DECORATION: none
+}
+B {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 16px; TEXT-DECORATION: none
+}
+.b {
+	COLOR: #000000; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; FONT-SIZE: 9pt; LINE-HEIGHT: 16px; TEXT-DECORATION: none
+}
+B:hover {
+	COLOR: #000000; FONT-SIZE: 9pt; TEXT-DECORATION: underline
+}
+B:link {
+	FONT-SIZE: 9pt; TEXT-DECORATION: none
+}
+B:active {
+	FONT-SIZE: 9pt
+}
+B:visited {
+	FONT-SIZE: 9pt; TEXT-DECORATION: none
+}
+.bg1 {
+	BACKGROUND-COLOR: #dce3ed; COLOR: #000463
+}
+INPUT {
+	BACKGROUND-COLOR: #f2f8ff; BORDER-BOTTOM-COLOR: #cccccc; BORDER-BOTTOM-WIDTH: 1px; BORDER-LEFT-COLOR: #cccccc; BORDER-LEFT-WIDTH: 1px; BORDER-RIGHT-COLOR: #cccccc; BORDER-RIGHT-WIDTH: 1px; BORDER-TOP-COLOR: #cccccc; BORDER-TOP-WIDTH: 1px; FONT-SIZE: 9pt; HEIGHT: 18px; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; PADDING-TOP: 1px
+}
+BODY {
+	SCROLLBAR-FACE-COLOR: white; SCROLLBAR-HIGHLIGHT-COLOR: white; SCROLLBAR-SHADOW-COLOR: #add0eb; SCROLLBAR-3DLIGHT-COLOR: #add0eb; SCROLLBAR-ARROW-COLOR: #5e9cc7; SCROLLBAR-TRACK-COLOR: white; SCROLLBAR-DARKSHADOW-COLOR: white
+}
+TEXTAREA {
+	BACKGROUND-COLOR: #ffffff; BORDER-BOTTOM: #808080 1px solid; BORDER-LEFT: #808080 1px solid; BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; FONT-FAMILY: 宋体; FONT-SIZE: 9pt
+}
+SELECT {
+	BACKGROUND-COLOR: #f2f8ff; BORDER-BOTTOM-COLOR: #000000; BORDER-BOTTOM-WIDTH: 1px; BORDER-LEFT-COLOR: #000000; BORDER-LEFT-WIDTH: 1px; BORDER-RIGHT-COLOR: #000000; BORDER-RIGHT-WIDTH: 1px; BORDER-TOP-COLOR: #000000; BORDER-TOP-WIDTH: 1px; FONT-FAMILY: 宋体; FONT-SIZE: 9pt
+}
+TD {
+	FONT-FAMILY: 宋体; FONT-SIZE: 12px
+}
+.a6 {
+	COLOR: #104a7b; FONT-SIZE: 9pt; TEXT-DECORATION: none
+}
+.unnamed1 {
+	COLOR: #656565; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-ALIGN: center
+}
+.unnamed2 {
+	COLOR: #252525; FONT-SIZE: 12px; TEXT-INDENT: 5pt
+}
+.unnamed3 {
+	FONT-SIZE: 12px; TEXT-INDENT: 5pt
+}
+.unnamed4 {
+	COLOR: #0e437d; FONT-SIZE: 12px; TEXT-ALIGN: center
+}
+.unnamed5 {
+	BORDER-BOTTOM: #707070 1px solid; BORDER-LEFT: #d4d4d4 1px solid; BORDER-RIGHT: #707070 1px solid; BORDER-TOP: #d4d4d4 1px solid
+}
+.unnamed6 {
+	FONT-SIZE: 12px
+}
+.a1 {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 16px; TEXT-DECORATION: none
+}
+.h2 {
+	BACKGROUND-COLOR: #fafafa; FONT-SIZE: 9pt; LINE-HEIGHT: 16px; TEXT-DECORATION: none
+}
+.t1 {
+	BACKGROUND-COLOR: #f4f4f4; FONT-SIZE: 9pt; LINE-HEIGHT: 16px; TEXT-DECORATION: none
+}
+.t2 {
+	BACKGROUND-COLOR: #d9e6f4; FONT-SIZE: 9pt; LINE-HEIGHT: 16px; TEXT-DECORATION: none
+}
+.t3 {
+	BACKGROUND-COLOR: #d9e6f4; COLOR: #000463; FONT-SIZE: 9pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.t4 {
+	BACKGROUND-COLOR: #ffffff; FONT-SIZE: 9pt; LINE-HEIGHT: 16px; TEXT-DECORATION: none
+}
+input.required, textarea.required {
+	border: 1px solid #00A8E6;
+}
+input.validation-failed, textarea.validation-failed {
+	border: 1px solid #FF3300;
+	color : #FF3300;
+}
+input.validation-passed, textarea.validation-passed {
+	border: 1px solid #00CC00;
+	color : #000;
+}
+
+/* 出错时显示信息使用的默认样式1 */
+.validation-advice {
+	background-color: #ff5b5b;
+	border-color: #808080;
+	border-style: solid;
+	border-width: 1px;
+	color: #FFF;
+	font-weight: bold;
+	margin-bottom: 2px;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 2px;
+	padding: 1px;
+	vertical-align:middle;
+}
+.redBigButton {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #000000;
+	background-color: #E2E8FF;
+	border: none;
+	cursor: hand;
+	height: 20px;
+	width: 80px;
+	text-align:center;
+}
+.custom-advice2 {
+	margin: 5px 0;
+	padding: 5px;
+	background-color: #DFF3FB;
+	color : #FF3300;
+	font-weight: bold;
+}
+
+.custom-advice1 {
+	margin: 5px 0;
+	padding: 5px;
+	background-color: #C8AA00;
+	color : #FFF;
+	font-weight: bold;
+}

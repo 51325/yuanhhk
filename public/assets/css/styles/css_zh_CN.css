@@ -1,0 +1,225 @@
+body {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-color: #f5f5f5;
+	font-family: simsun, Arial, Helvetica, sans-serif;
+}
+ .form tbody tr th div
+{
+	width                : 59px;
+	text-align           : justify;
+	text-justify         : distribute-all-lines;
+	text-align-last      : justify;
+}
+TD {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	line-height: 200%;
+}
+ .td-text {
+ 	width                : 64px;
+	text-align           : justify;
+	text-justify         : distribute-all-lines;
+	text-align-last      : justify;
+}
+ .td-text-order {
+ 	width                : 64px;
+	text-align           : justify;
+	text-justify         : distribute-all-lines;
+	text-align-last      : justify;
+	margin-left:5px;
+	padding-right:3px;
+}
+.td-text-left{
+	text-align           : left;
+	width                : 10px;
+	margin-left:5px;
+	margin-right:0px;
+	display: block;
+	float : left;
+
+}
+
+.td-text-right{
+	text-align           : right;
+	margin-right:0px;
+	margin-left:0px;
+	float : right;
+	display: block;
+	padding:0px;
+	clear:left;
+}
+
+ .td-text1 {
+ 	width                : 72px;
+	text-align           : justify;
+	text-justify         : distribute-all-lines;
+	text-align-last      : justify;
+}
+ .td-text2 {
+ 	width                : 80px;
+	text-align           : justify;
+	text-justify         : distribute-all-lines;
+	text-align-last      : justify;
+}
+ .td-text3 {
+ 	width                : 110px;
+	text-align           : justify;
+	text-justify         : distribute-all-lines;
+	text-align-last      : justify;
+}
+ .td-text4 {
+ 	width                : 86px;
+	text-align           : justify;
+	text-justify         : distribute-all-lines;
+	text-align-last      : justify;
+}
+A:link {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR:#000000; TEXT-DECORATION: none
+}
+A:active {
+	TEXT-DECORATION: none
+}
+.top-text:link {
+	COLOR:#FFFFFF;
+	font-weight: bold;
+}
+.top-text:visited {
+	COLOR:#FFFFFF;
+	font-weight: bold;
+}
+.top-text:hover {
+	COLOR:#CCCCCC;
+	font-weight: bold;
+}
+.language-text:link {
+	COLOR:#FFFFFF;
+	font-size:8pt;
+	font-weight: bold;
+	cursor: hand;
+}
+.language-text:visited {
+	COLOR:#FFFFFF;
+	font-size:8pt;
+	font-weight: bold;
+	cursor: hand;
+}
+.language-text:hover {
+	COLOR:#CCCCCC;
+	font-size:8pt;
+	font-weight: bold;
+	cursor: hand;
+}
+.Scroll {color: #FFFFFF}
+.lost-text:link {
+	color:red;
+}
+.lost-text:visited {
+	color:red;
+}
+.lost-text:hover {
+	color:red;
+}
+.left-text:link {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.left-text:visited {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.left-text:hover {
+	font-size: 14px;
+	font-weight: bold;
+	color: #CCCCCC;
+}
+.a1:link {
+	COLOR: #333333;
+	TEXT-DECORATION: none;
+	font-weight: bold;
+}
+.a1:visited {
+	COLOR: #333333;
+	TEXT-DECORATION: none;
+	font-weight: bold;
+}
+.a1:hover {
+	COLOR:#1c67b8;
+	TEXT-DECORATION: none;
+	font-weight: bold;
+}
+
+.btn:link {
+	COLOR: #333333;
+	TEXT-DECORATION: none;
+	background-image: url(images/botton1.jpg);
+	height: 27px;
+	width: 80px;
+	float: left;
+	clear: none;
+	position: static;
+	background-repeat: no-repeat;
+	text-align: center;
+	font-weight: bold;
+	vertical-align: middle;
+}
+.btn:visited {
+	COLOR: #FFFFFF;
+	TEXT-DECORATION: none;
+	background-image: url(images/botton.jpg);
+	height: 27px;
+	width: 80px;
+	float: left;
+	text-align: center;
+	background-repeat: no-repeat;
+	font-weight: bold;
+	vertical-align: middle;
+}
+.btn:hover {
+	COLOR: #666666;
+	TEXT-DECORATION: none;
+	background-image: url(images/botton1.jpg);
+	height: 27px;
+	width: 80px;
+	text-align: center;
+	float: left;
+	background-repeat: no-repeat;
+	font-weight: bold;
+	vertical-align: middle;
+}
+.b{
+	overflow-x:auto;
+	width:760px;
+	overflow-y:auto;
+	height:120px;
+}
+.c{
+	overflow-x:auto;
+	width:800px;
+	overflow-y:auto;
+	height:500px;
+}
+.b1{
+	width:130px;
+	text-align: center;
+}
+.bold{
+	font-weight: bold;
+}
+.word-subscibe{ width:18%;
+}
+.word-subscibe1{ width:80px;
+}
+.word-subscibe2{ width:20%;
+}
