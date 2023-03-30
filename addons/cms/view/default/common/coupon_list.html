@@ -1,0 +1,13 @@
+{php}$page=request()->get('page/d',1);$offset=($page-1)*3;{/php}
+<article class="article-item">
+	<div class="media">
+	  <ul class="coupon-list">
+		<!-- S 首页列表 -->
+		{cms:arclist id="item" cache="false" orderby="weigh" channel="9" limit="$offset,3"}
+		{include file="common/coupon_item"}
+		{/cms:arclist}
+		<!-- E 首页列表 -->
+	  </ul>
+	</div>
+
+</article>

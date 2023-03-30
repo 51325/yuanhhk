@@ -1,0 +1,99 @@
+{layout name="common/layout" /}
+
+<div class="container" id="content-container">
+	<div class="banner">
+		{cms:block name="businessbanner" /}
+	</div>
+    <div class="row">
+		
+        <aside class="col-xs-12 col-sm-3">
+            {include file="common/sidebar_business" /}
+        </aside>
+		
+        <main class="col-md-9">
+            <div class="panel panel-default article-content">
+                <div class="panel-heading">
+                    <ol class="breadcrumb">
+                        <!-- S 面包屑导航 -->
+                        {cms:breadcrumb id="item"}
+                        <li><a href="{$item.url}">{$item.name}</a></li>
+                        {/cms:breadcrumb}
+                        <!-- E 面包屑导航 -->
+                    </ol>
+                </div>
+                <div class="panel-body">
+                    <div class="article-metas">
+                        <h1 class="metas-title" {if $__ARCHIVES__.style}style="{$__ARCHIVES__.style_text}"{/if}>
+                            {cms:archives name="title" /}
+                        </h1>
+                        <!-- S 统计信息 -->
+                        <div class="metas-body">
+                            {if $__ARCHIVES__.author}
+                            <span>
+                                <i class="fa fa-user"></i> {cms:archives name="author" /}
+                            </span>
+                            {/if}
+                            <span class="views-num">
+                                <i class="fa fa-eye"></i> {cms:archives name="views" /} 阅读
+                            </span>
+                            <span class="like-num">
+                                <i class="fa fa-thumbs-o-up"></i>
+                                <span class="js-like-num"> {cms:archives name="likes" /} 点赞
+                                </span>
+                            </span>
+                        </div>
+                        <!-- E 统计信息 -->
+                    </div>
+
+                    <div class="article-text">
+                        <!-- S 正文 -->
+                        <p>
+                            {if (isset($__ARCHIVES__.price) && $__ARCHIVES__.price<=0) || $__ARCHIVES__.is_paid_part_of_content || $__ARCHIVES__.ispaid}
+                            {cms:archives name="content" /}
+                            {/if}
+                        </p>
+                        <!-- E 正文 -->
+                    </div>
+
+                    <div class="article-donate">
+                        <a href="javascript:" class="btn btn-primary btn-like btn-lg" data-action="vote" data-type="like" data-id="{cms:archives name='id' /}" data-tag="archives"><i class="fa fa-thumbs-up"></i> 点赞(<span>{cms:archives name='likes' /}</span>)</a>
+                    </div>
+
+                    <div class="entry-meta">
+                        <ul>
+                            <!-- S 归档 -->
+                            <li>{:__('Article category')}：<a href="{cms:channel name='url' /}">{cms:channel name="name" /}</a></li>
+                            <li>{:__('Article tags')}：{volist name="$__ARCHIVES__.tagslist" id="tag"}<a href="{$tag.url}" class="tag" rel="tag">{$tag.name}</a>{/volist}</li>
+                            <li>{:__('Article views')}：<span>{cms:archives name="views" /}</span> 次浏览</li>
+                            <li>{:__('Post date')}：{cms:archives name="publishtime|datetime" /}</li>
+                            <li>{:__('Article url')}：<a href="{cms:archives name='fullurl' /}">{cms:archives name="fullurl" /}</a></li>
+                            <!-- S 归档 -->
+                        </ul>
+
+                        <ul class="article-prevnext">
+                            <!-- S 上一篇下一篇 -->
+                            {cms:prevnext id="prev" type="prev" archives="__ARCHIVES__.id" channel="__CHANNEL__.id"}
+                            <li>
+                                <span>{:__('Prev')} &gt;</span>
+                                <a href="{$prev.url}">{$prev.title}</a>
+                            </li>
+                            {/cms:prevnext}
+
+                            {cms:prevnext id="next" type="next" archives="__ARCHIVES__.id" channel="__CHANNEL__.id"}
+                            <li>
+                                <span>{:__('Next')} &gt;</span>
+                                <a href="{$next.url}">{$next.title}</a>
+                            </li>
+                            {/cms:prevnext}
+                            <!-- E 上一篇下一篇 -->
+                        </ul>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </main>
+
+        
+    </div>
+</div>

@@ -1,0 +1,125 @@
+
+<style type="text/css">
+	.input-textbox{
+		width: auto;
+	}
+	.input-large-textbox{
+		width: 80%;
+	}
+	@media (max-width: 767px) {
+		.input-textbox{
+			width: 100%;
+		}
+		.input-large-textbox{
+			width: 100%;
+		}
+	}
+	.form-control{
+		display: inline;
+	}
+</style>
+{layout name="common/layout" /}
+<div class="jumbotron jumbotron-fluids" style="background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url({cms:parentchannel name='image' /});">
+        <div class="container text-center py-5">
+            <h5 class="text-white display-3">{cms:config name="cms.title"/}</h5>
+            <div class="d-inline-flex align-items-center text-white">
+               {cms:breadcrumb id="item"}
+			    <p class="m-0"><a class="text-white" href="{$item.url}">{$item.name}</a></p> 
+                 <i class="fa fa-circle px-3"></i>				
+                {/cms:breadcrumb}
+            </div>
+        </div>
+</div>
+<div class="container" id="content-container">
+	
+    <div class="row">
+		
+        <aside class="col-xs-12 col-sm-3">
+            {include file="common/sidebar_son_knowledge" /}
+        </aside>
+		
+        <main class="col-md-9">
+            <div class="card">
+                <nav >
+                    <ol class="breadcrumb">
+                        <!-- S 面包屑导航 -->
+                        {cms:breadcrumb id="item"}
+                        <li class="breadcrumb-item" ><a href="{$item.url}">{$item.name}</a></li>
+                        {/cms:breadcrumb}
+                        <!-- E 面包屑导航 -->
+                    </ol>
+                </nav>
+                <div class="card-body">
+                    <div class="article-metas">
+                        <h1 class="metas-title" >
+                            {cms:page name="title" /}
+                        </h1>
+                        
+                    </div>
+
+                    <div class="article-text">
+						<form name="form" id="login-form" class="form-vertical" method="POST" action="\index\Cms_Message\add">
+							<div class="form-group">
+								<label class="control-label" for="name">{:__('姓名')}&nbsp&nbsp&nbsp</label>
+								<div class="controls" style="display:inline;">
+									<input class="form-control input-lg input-textbox" id="name" type="text" name="name" value="" data-rule="required;" placeholder="{:__('姓名')}" autocomplete="off">
+									<div class="help-block"></div>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="control-label" for="telephone">{:__('电话')}&nbsp&nbsp&nbsp</label>
+								<div class="controls" style="display:inline;">
+									<input class="form-control input-lg input-textbox" id="telephone" type="text" name="telephone" value="" data-rule="required;mobile" placeholder="{:__('电话')}" autocomplete="off">
+									<div class="help-block"></div>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="control-label" for="wx">{:__('微信')}&nbsp&nbsp&nbsp</label>
+								<div class="controls" style="display:inline;">
+									<input class="form-control input-lg input-textbox" id="wx" type="text" name="wx" value="" data-rule="" placeholder="{:__('微信')}" autocomplete="off">
+									<div class="help-block"></div>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="control-label" for="email">{:__('邮箱')}&nbsp&nbsp&nbsp</label>
+								<div class="controls" style="display:inline;">
+									<input class="form-control input-lg input-textbox" id="email" type="text" name="email" value="" data-rule="" placeholder="{:__('邮箱')}" autocomplete="off">
+									<div class="help-block"></div>
+								</div>
+							</div>
+							
+							
+							<div class="form-group">
+								<label class="control-label" for="address">{:__('地址')}&nbsp&nbsp&nbsp</label>
+								<div class="controls" style="display:inline;">
+									<input class="form-control input-lg input-large-textbox" id="address" type="text" name="address" value="" data-rule="" placeholder="{:__('地址')}" autocomplete="off">
+									<div class="help-block"></div>
+								</div>
+							</div>
+							
+							
+							<div class="form-group">
+								<label class="control-label" for="content">{:__('内容')}&nbsp&nbsp&nbsp</label>
+								<div class="controls" style="display:inline;">
+									<textarea  class="form-control input-lg input-large-textbox" id="content" type="text" name="content" value="" data-rule="" placeholder="{:__('内容')}" autocomplete="off"> </textarea>
+									<div class="help-block" />
+								</div>
+							</div>
+							
+							<div class="form-group" style="text-align:center;">
+								<button type="submit" style="width:100px; display:inline;" class="btn btn-primary btn-lg btn-block">{:__('提交')}</button>
+							</div>
+						</form>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </main>
+
+        
+    </div>
+</div>

@@ -1,0 +1,23 @@
+
+<div class="panel panel-default recommend-article">
+	<div class="panel-body">
+		{cms:channellist id="infos" type="son" typeid="$__CHANNEL__.id"}
+		<div class="media media-number">
+			<div class="media-body">
+				<a href="{$infos.url}" title="{$infos.name}">{$infos.name}</a>
+			</div>
+		</div>
+		{/cms:channellist}
+	</div>
+</div>
+	
+
+<div class="panel panel-default hot-article">
+    <div class="panel-heading">
+        <h3 class="panel-title">{:__('联系方式')}</h3>
+    </div>
+    <div class="panel-body">
+        {cms:block name="sidebarcontact" /}
+    </div>
+</div>
+

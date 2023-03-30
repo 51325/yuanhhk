@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>{cms:config name="cms.title"/} - {cms:config name="cms.sitename"/}</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="keywords" content="{cms:config name='cms.keywords'/}"/>
+    <meta name="description" content="{cms:config name='cms.description'/}"/>
+    <!-- Favicon -->    
+    <!-- Google Web Fonts -->
+    <!-- Font Awesome -->
+	
+    <link href="__CDN__/template/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="__CDN__/template/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="__CDN__/template/css/style.css" rel="stylesheet">
+	
+	
+	
+</head>
+
+<body>
+   
+    <!-- Topbar End -->
+    
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0" >
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3  px-lg-5" style="padding:15px;" >
+            <a href="{cms:config name='cms.indexurl'/}" class="navbar-brand ml-lg-3">
+               <img src="__CDN__/template/1678079233_logo_img.png" style="width:220px"/>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav m-auto py-0" style="font-size: 16px;font-weight:10px;">
+				     {cms:channellist id="nav" type="top" condition="1=isnav"}
+                    <a href="{$nav.url}" class="nav-item nav-link">{$nav.name}</a>
+					{/cms:channellist}
+                    <!-- <a href="cms/about.html" class="nav-item nav-link">产品服务</a> -->
+                    <!-- <a href="service.html" class="nav-item nav-link">客户服务</a> -->
+                    <!-- <a href="price.html" class="nav-item nav-link">合作案例</a> -->
+                    <!-- <a href="#" class="nav-item nav-link" data-toggle="dropdown">投资者关系</a>   -->
+                    <!-- <a href="contact.html" class="nav-item nav-link">关于我们</a> -->
+                </div>
+                <a href="" class=" py-2 px-4 d-none d-lg-block" style="border-radius:6px;">服务热线：00852-30622628</a>
+            </div>
+        </nav>
+    </div>
+    {__CONTENT__}
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-7 col-md-6">
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <h5 class="text-primary mb-4">联系方式</h5>                       
+                        <p><i class="fa fa-phone-alt mr-2"></i>{cms:config name="site.telephone"/}</p>                        
+                        <div class="d-flex justify-content-start mt-4">
+                            <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h5 class="text-primary mb-4">快捷菜单</h5>
+                        <div class="d-flex flex-column justify-content-start">
+						    {cms:channellist id="bottom" type="top"}
+							{neq name="$bottom.id" value="1"} 
+                            <a class="text-white mb-2" href="{$bottom.url}"><i class="fa fa-angle-right mr-2"></i>{$bottom.name}</a>
+                           	{/neq}
+						   {/cms:channellist}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 mb-5">
+                <h5 class="text-primary mb-4">业务特色</h5>
+                <p>全程跟踪：通过企业核心业务系统、视频监控系统和 GPS定位系统，全程跟踪，实时监控每一票快件的安全和时效；
+时效保证：收派运输各环节均优先运作。</p>
+               
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="__CDN__/template/js/jquery-3.2.1.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="__CDN__/template/lib/easing/easing.min.js"></script>
+    <script src="__CDN__/template/lib/waypoints/waypoints.min.js"></script>
+    <script src="__CDN__/template/lib/counterup/counterup.min.js"></script>
+    <script src="__CDN__/template/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="__CDN__/template/mail/jqBootstrapValidation.min.js"></script>
+    <script src="__CDN__/template/mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="__CDN__/template/js/main.js"></script>
+</body>
+
+</html>

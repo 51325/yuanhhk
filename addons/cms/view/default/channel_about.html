@@ -1,0 +1,63 @@
+{layout name="common/layout" /}
+
+<div class="container" id="content-container">
+	<div class="banner">
+		<img src="{cms:channel name='image' /}" style="width: 100%;"/>
+	</div>
+    <div class="row">
+		
+        <aside class="col-xs-12 col-sm-3">
+            {include file="common/sidebar_knowledge" /}
+        </aside>
+		
+        <main class="col-md-9">
+            <div class="panel panel-default article-content">
+                <div class="panel-heading">
+                    <ol class="breadcrumb">
+                        <!-- S 面包屑导航 -->
+                        {cms:breadcrumb id="item"}
+                        <li><a href="{$item.url}">{$item.name}</a></li>
+                        {/cms:breadcrumb}
+                        <!-- E 面包屑导航 -->
+                    </ol>
+                </div>
+                <div class="panel-body">
+                    <div class="article-metas">
+                        <h1 class="metas-title" >
+                            {cms:page name="title" /}
+                        </h1>
+                        <!-- S 统计信息 -->
+                        <div class="metas-body">
+                            <span class="views-num">
+                                <i class="fa fa-eye"></i> {cms:page name="views" /} 阅读
+                            </span>
+                            <span class="like-num">
+                                <i class="fa fa-thumbs-o-up"></i>
+                                <span class="js-like-num"> {cms:page name="likes" /} 点赞
+                                </span>
+                            </span>
+                        </div>
+                        <!-- E 统计信息 -->
+                    </div>
+
+                    <div class="article-text">
+                        <!-- S 正文 -->
+                        <p>
+                            {cms:page name="content" /}
+                        </p>
+                        <!-- E 正文 -->
+                    </div>
+
+                    <div class="article-donate">
+                        <a href="javascript:" class="btn btn-primary btn-like btn-lg" data-action="vote" data-type="like" data-id="{cms:page name='id' /}" data-tag="page"><i class="fa fa-thumbs-up"></i> 点赞(<span>{cms:page name='likes' /}</span>)</a>
+                    </div>
+
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </main>
+
+        
+    </div>
+</div>

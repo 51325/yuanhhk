@@ -1,0 +1,206 @@
+{layout name="common/layout" /}
+ <!-- Navbar End -->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            
+		  <ol class="carousel-indicators">
+            {cms:blocklist id="block" name="img" row="5"}
+			<li data-target="#carouselExampleIndicators" data-slide-to="{:$i-1}" class="{if $i==1}active{/if}"></li>
+			{/cms:blocklist}
+		  </ol>
+		  <div class="carousel-inner" >
+		    {cms:blocklist id="block" name="img" row="5"}
+			<div class="carousel-item {if $i==1}active{/if}">
+			  <img src="{$block.image|cdnurl}" class="d-block w-100" >
+			</div>
+			{/cms:blocklist}
+		  </div>
+		   <div class="input-group" style="position:absolute;top:60%;z-index:1;max-width:350px;margin-left:8%;background-color:#ffff;padding:20px;border-radius:3px;">			
+                    
+                    <div>
+					<input name="orderid" id="orderid" type="text" class="form-control " style="padding: 5px;" placeholder="快件追踪">
+					</div>
+                    <div class="input-group-append" style="margin-top:10px;">
+                        <button class="btn btn-primary px-3" style="width:100%;border-radius:5px"
+						onclick="searchOrders();">追踪</button>
+                    </div>
+               
+            </div>
+		  
+           
+</div>
+<script>
+ $(document).ready(function(){
+		  $("#orderid").hover(function(){
+				this.select();
+		  });
+	  }
+  )
+  
+  function searchOrders(){
+    
+	  var ordersId = $("#orderid").val();
+	
+	  if(ordersId && ordersId.length > 0){
+		  var orders = ordersId.split(";");
+		  for(var i=0; i< orders.length; i++){
+		      window.location="/search_kuai_di/search/orderid/"+orders[i];
+			
+		  }
+	  }
+	  
+  }
+</script>
+  <!-- Services Start -->
+    <div class="container-fluid">
+        <div class="container mt-5 pt-2">
+            <div class="text-center pb-2">
+                <h6 class="text-primary text-uppercase ">Service</h6>
+                <h3 class="mb-4">产品服务</h3>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-3 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center  mb-4 p-4" style="background-color:#FF690F">
+                        <i class="fa fa-2x fa-plane text-dark pr-3"></i>
+                        <h6 class="text-white font-weight-medium m-0" >空运服务</h6>
+                    </div>
+                    <p>远航国际快运是中国民航总局、海关总署批准的一级货运代理企业，中国航空运输协会(CATA)、世界货运联盟（WCA）会员，香港至内地一级通关连线平台</p>
+                    <a class="border-bottom text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4 p-4" style="background-color:#FF690F">
+                        <i class="fa fa-2x fa-ship text-dark pr-3"></i>
+                        <h6 class="text-white font-weight-medium m-0">海运服务</h6>
+                    </div>
+                    <p>国际货运代理企业我们在北京、青岛、上海、深圳等主要港口设有分公司，在欧洲、中东、中亚、南北美洲、东南亚以及日韩等地拥有完善的代理网络</p>
+                    <a class="border-bottom text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center  mb-4 p-4" style="background-color:#FF690F">
+                        <i class="fa fa-2x fa-truck text-dark pr-3"></i>
+                        <h6 class="text-white font-weight-medium m-0">冷运服务</h6>
+                    </div>
+                    <p>为满足日益增长的中港冷藏货运的需要，公司特推出中港专线冷运，并且郑重承诺，五年零利润运营。适合产品：海鲜、水果、试剂、血清、药品等</p>
+                    <a class="border-bottom text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center  mb-4 p-4" style="background-color:#FF690F">
+                        <i class="fa fa-2x fa-store text-dark pr-3"></i>
+                        <h6 class="text-white font-weight-medium m-0">仓储服务</h6>
+                    </div>
+                    <p>善用海外仓，强强联手
+选择海外仓，不仅能为物流提速，还可以获得平台提供的更多附加价值，如平台流量和政策倾斜、平台返利、1-2周快速回款等。</p>
+                    <a class="border-bottom text-decoration-none" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+    <!-- Features Start -->
+    <div class="container-fluid bg-secondary my-5">
+        <div class="container">
+            {cms:blocklist id="block" name="index" row="1"}
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <img class="img-fluid w-100" src="{$block.image|cdnurl}">
+                </div>
+                <div class="col-lg-7 py-5 py-lg-0">
+                    <h6 class="text-primary text-uppercase font-weight-bold">关于我们</h6>
+                    <h4 class="mb-4">{$block.title}</h4>
+                    <p class="mb-4">{$block.content}</p>                    
+                    <a href="/cms/p/abouthuanqiu" class="btn btn-primary mt-3 py-2 px-4">Learn More</a>
+                </div>
+            </div>
+			{/cms:blocklist}
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    <!-- Pricing Plan Start -->
+    <!-- <div class="container-fluid pt-5"> -->
+        <!-- <div class="container"> -->
+            <!-- <div class="text-center pb-2"> -->
+                <!-- <h6 class="text-primary text-uppercase font-weight-bold">Case</h6> -->
+                <!-- <h3 class="mb-4">合作案例</h3> -->
+            <!-- </div> -->
+            <!-- <div class="row"> -->
+			    <!-- {cms:arclist id="item" cache="false"  type="sons" channel="38" orderby="weigh" limit="0,3"} -->
+                <!-- <div class="col-md-4 mb-5"> -->
+                    <!-- <div class="bg-secondary"> -->
+                        
+                        <!-- <div class="bg-primary text-center p-4"> -->
+                            <!-- <h5 class="m-0">{$item.title}</h5> -->
+                        <!-- </div> -->
+                        <!-- <div class="d-flex flex-column align-items-center py-4"> -->
+                            <!-- <p>美特斯邦威2015</p> -->
+							<!-- <p>年远航与美特斯邦威开始业务合作</p> -->
+							<!-- <p>并提供配送服务</p> -->
+                            <!-- <a href="{$item.url}" class="btn btn-primary py-2 px-4 my-2">Read More</a> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+				<!-- {/cms:arclist} -->
+                <!-- <div class="col-md-4 mb-5"> -->
+                    <!-- <div class="bg-secondary"> -->
+                       
+                        <!-- <div class="bg-primary text-center p-4"> -->
+                            <!-- <h5 class="m-0">美特斯邦威</h5> -->
+                        <!-- </div> -->
+                        <!-- <div class="d-flex flex-column align-items-center py-4"> -->
+                            
+                            <!-- <p>美特斯邦威2015</p> -->
+							<!-- <p>年远航与美特斯邦威开始业务合作</p> -->
+							<!-- <p>并提供配送服务</p> -->
+                            <!-- <a href="" class="btn btn-primary py-2 px-4 my-2">Order Now</a> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+                <!-- <div class="col-md-4 mb-5"> -->
+                    <!-- <div class="bg-secondary"> -->
+                       
+                        <!-- <div class="bg-primary text-center p-4"> -->
+                            <!-- <h5 class="m-0">美特斯邦威</h5> -->
+                        <!-- </div> -->
+                        <!-- <div class="d-flex flex-column align-items-center py-4"> -->
+                           <!-- <p>美特斯邦威2015</p> -->
+							<!-- <p>年远航与美特斯邦威开始业务合作</p> -->
+							<!-- <p>并提供配送服务</p> -->
+                            <!-- <a href="" class="btn btn-primary py-2 px-4 my-2">Order Now</a> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+    <!-- </div> -->
+    <!-- Pricing Plan End -->
+
+    
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="text-center pb-2">
+                <h6 class="text-primary text-uppercase font-weight-bold">News</h6>
+                <h3 class="mb-4">新闻中心</h3>
+            </div>
+            <div class="row">{php}$page=request()->get('page/d',1);$offset=($page-1)*10;{/php}
+			   {cms:arclist id="item" cache="false"  type="sons" channel="5" orderby="weigh" limit="$offset,2"}
+                <div class="col-md-6 mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="{$item.image}">
+                       
+                    </div>
+                    <div class="bg-secondary" style="padding: 30px;">                       
+                        <h4 class="font-weight-bold mb-3">{$item.title}</h4>                       
+                        <a class="border-bottom border-primary text-uppercase text-decoration-none" href="{$item.url}">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+				{/cms:arclist}                
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->

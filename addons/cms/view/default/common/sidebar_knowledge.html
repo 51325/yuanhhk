@@ -1,0 +1,23 @@
+
+<div class="card card-default recommend-article">
+	<div class="card-body">
+		{cms:channellist id="infos" type="son" typeid="$__CHANNEL__.id"}
+		<div class="media media-number">
+			<div class="media-body">
+				<a href="{$infos.url}" title="{$infos.name}">{$infos.name}</a>
+			</div>
+		</div>
+		{/cms:channellist}
+	</div>
+</div>
+	
+
+<div class="card card-default hot-article">
+    <div class="card-header">
+        <h3 class="card-title">{:__('联系方式')}</h3>
+    </div>
+    <div class="card-body">
+        {cms:block name="sidebarcontact" /}
+    </div>
+</div>
+

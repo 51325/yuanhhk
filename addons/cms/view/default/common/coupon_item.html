@@ -1,0 +1,14 @@
+
+		<li style="" onclick="window.location.href='{$item.url}'">
+		  <div class="pic"><a href="{$item.url}"><img src="{$item.image}" width="245" height="209" alt="{$item.title}" title="{$item.title}"></a></div>
+		  <div class="txt">
+			 <div class="txt1"><a href="{$item.url}" style="font-size:14px;">{$item.title}</a></div>
+			 {lt name="$item.activeendtime" value="date()"}
+				<div class="txt2"><a style="background:#949494;">已结束</a></div>
+			 {else /}
+				<div class="txt2"><a>进行中</a></div>
+			 {/lt}
+			 <div class="txt3">{$item.activestarttime|date="Y-m-d",###} 至 {$item.activeendtime|date="Y-m-d",###}</div>
+			 <div class="txt4">{$item.activearea}</div>
+		  </div>
+		</li>

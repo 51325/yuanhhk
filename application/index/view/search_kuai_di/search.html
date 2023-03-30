@@ -1,0 +1,140 @@
+<link href="__CDN__/assets/css/search.css" rel="stylesheet">
+<link href="__CDN__/template/css/style.css" rel="stylesheet">
+<style type="text/css">
+	body{
+		padding-top: 0px;
+		font-size:16px;
+	}
+	.bordertable td{
+		border:3px solid white;
+	}
+	main.content {
+	  min-height: calc(100vh - 75px);
+	}
+</style>
+
+							<table width="80%" border="0" cellspacing="0" cellpadding="0"  align="center">
+								<tbody>
+								<tr>
+									<td width="3%">&nbsp;</td>
+									<td align="left" valign="top">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											
+											 <tbody><tr style="display:;">
+											   <td height="10">
+												<table width="100%" border="0" cellspacing="3" cellpadding="0">
+													<tbody>
+													<tr>
+														<td height="25">
+														<div class="input-group" style="padding:20px 0 20px 0;text-align:center; ">
+														<input name="orderid" id="orderid" type="text"  style="padding: 5px;width:200px" placeholder="快件追踪">
+														<button class="btn btn-primary px-3" style="margin-left:10px;padding: 3px;border-radius:3px;" onclick="searchOrders();">追踪</button>
+														</div>
+														</td>
+													</tr>
+													<!-- <tr> -->
+														<!-- <td class="colheadline"> -->
+															<!-- <div class="sheadline"> -->
+																<!-- 快件追踪查询结果，订单号： {$orderid}			                        	</div>			                        </td> -->
+													<!-- </tr> -->
+													<tr>
+														<td height="10">				                  	</td>
+													</tr>
+													
+													<tr style="display:none;">
+														<td>
+															<table width="100%" border="0" cellspacing="0" cellpadding="0" style="display:none;">
+																<tbody><tr>
+																	<td class="colheadline">
+																		<div class="sheadline">
+																			快件状态&gt;&gt;					                        		</div>	                            				</td>
+																</tr>
+															</tbody></table>			                        </td>
+													</tr>
+												</tbody></table>	                       </td>
+											 </tr>
+											<tr>
+											  <td valign="top">
+												{eq name="$total" value="0"}
+													<table class="bordertable" width="100%" border="0" cellspacing="3" cellpadding="0">
+														<tbody>
+															<tr>
+															  <td align="center"  class="atxt1"> 很抱歉，您查询的单号并不存在，请查证后再次输入。 </td>
+															</tr>
+														</tbody>
+													</table>
+												{else /}
+													<table class="bordertable" width="100%" border="0" cellspacing="3" cellpadding="0">
+														<tbody>
+														<tr class="tableColor21" >
+														  <td width="30%" class="tdtext-color"><strong>日期</strong></td>
+														  <!--  <td width="4%" class="tdtext-color"><p><strong>时间</strong></p></td>-->
+														  <td class="tdtext-color"><strong>快件状态</strong></td>
+														  <!--  <td width="5%" class="tdtext-color"><strong>当前地点</strong></td>-->
+														  
+														</tr>
+													
+													{if condition="isset($inlanderror)"}
+														<tr  height="30">
+															<td align="left" colspan="2"> 国内快递查询失败，订单号： {$inlandorderid}</td>
+														</tr>
+														<tr  height="30">
+														  <td align="center" colspan="2"> {$inlanderror} </td>
+														</tr>
+													{else /}
+														{if condition="isset($inland)"}
+															{volist name="$inland" id="detail"}
+																<tr height="50">
+																  <td align="left" >{$detail->ftime}</td>
+																  <td align="left"  class="atxt1"> {$detail->context} </td>
+																</tr>
+															{/volist}	
+														{/if}
+													{/if}
+													{volist name="$details" id="data"}
+														<tr height="50">
+														  <td align="left" >{$data["delivertimestr"]}</td>
+														  <td align="left"  class="atxt1"> {$data["content"]} </td>
+														</tr>
+													{/volist}
+														</tbody>
+													</table>
+												{/eq}
+												
+												
+											  </td>
+											</tr>
+										</tbody></table>
+									</td>
+									<td width="3%">&nbsp;</td>
+								</tr>				 
+							</tbody></table>
+					
+				
+				<script src="__CDN__/template/js/jquery-3.2.1.js"></script>
+			<script>
+ $(document).ready(function(){
+		  $("#orderid").hover(function(){
+				this.select();
+		  });
+	  }
+  )
+  
+  function searchOrders(){
+    
+	  var ordersId = $("#orderid").val();
+	
+	  if(ordersId && ordersId.length > 0){
+		  var orders = ordersId.split(";");
+		  for(var i=0; i< orders.length; i++){
+		      window.location.replace("/search_kuai_di/search/orderid/"+orders[i]);
+			
+		  }
+	  }
+	  
+  }
+</script>
+
+
+		
+	
